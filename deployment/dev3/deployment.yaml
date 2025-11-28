@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nationalparks
+  namespace: scsk-cd-dev3
+  labels:
+    app: nationalparks
+    app.kubernetes.io/component: nationalparks
+    app.kubernetes.io/instance: nationalparks
+    app.kubernetes.io/name: nationalparks
+    app.kubernetes.io/part-of: nationalparks-git-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nationalparks
+  template:
+    metadata:
+      labels:
+        app: nationalparks
+        deployment: nationalparks
+    spec:
+      containers:
+        - name: nationalparks
+          image: image-registry.openshift-image-registry.svc:5000/scsk-cd-dev3/nationalparks:latest
+          ports:
+            - containerPort: 8080
+              protocol: TCP
+            - containerPort: 8443
+              protocol: TCP
+            - containerPort: 8778
+              protocol: TCP
