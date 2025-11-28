@@ -22,7 +22,7 @@ spec:
     spec:
       containers:
         - name: nationalparks
-          image: image-registry.openshift-image-registry.svc:5000/scsk-cd-dev/nationalparks:20251128_02
+          image: image-registry.openshift-image-registry.svc:5000/scsk-cd-dev/nationalparks:20251128_03
           ports:
             - containerPort: 8080
               protocol: TCP
