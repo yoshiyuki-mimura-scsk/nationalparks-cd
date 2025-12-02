@@ -1,17 +1,17 @@
 apiVersion: route.openshift.io/v1
 kind: Route
 metadata:
-  name: nationalparks
-  namespace: scsk-cd-dev3
+  name: nationalparks3
+  namespace: scsk-cd-dev
   labels:
-    app: nationalparks
-    app.kubernetes.io/component: nationalparks
-    app.kubernetes.io/instance: nationalparks
-    app.kubernetes.io/name: nationalparks
+    app: nationalparks3
+    app.kubernetes.io/component: nationalparks3
+    app.kubernetes.io/instance: nationalparks3
+    app.kubernetes.io/name: nationalparks3
     app.kubernetes.io/part-of: nationalparks-git-app
 spec:
   to:
     kind: Service
-    name: nationalparks
+    name: nationalparks3
   port:
     targetPort: 8080
