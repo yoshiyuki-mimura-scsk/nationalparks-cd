@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/component: nationalparks3
     app.kubernetes.io/instance: nationalparks3
     app.kubernetes.io/name: nationalparks3
-    app.kubernetes.io/part-of: nationalparks-git-app
+    app.kubernetes.io/part-of: nationalparks-git-app3
 spec:
   to:
     kind: Service

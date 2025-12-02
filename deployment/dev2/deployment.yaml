@@ -8,7 +8,7 @@ metadata:
     app.kubernetes.io/component: nationalparks2
     app.kubernetes.io/instance: nationalparks2
     app.kubernetes.io/name: nationalparks2
-    app.kubernetes.io/part-of: nationalparks-git-app
+    app.kubernetes.io/part-of: nationalparks-git-app2
 spec:
   replicas: 1
   selector:
